@@ -1,0 +1,59 @@
+.Company-container {
+  border: solid 1px black;
+  border-radius: 0.5rem;
+  width: 292px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Company-container:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.Company-container .Company-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.Company-container .Company-name p:first-child {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.Company-container .Company-name p:last-child {
+  font-size: 0.75rem;
+}
+
+.Company-container .Company-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 0.25rem;
+}
+
+.Company-container .Company-price p:first-child {
+  font-weight: 400;
+  font-size: 1.25rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.Company-container .Company-price span {
+  font-size: 1rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  width: fit-content;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+}
+
+.up {
+  background-color: green;
+}
+
+.down {
+  background-color: red;
+}

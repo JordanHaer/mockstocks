@@ -1,0 +1,36 @@
+.CompanyInfo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.info-container {
+  width: 50%;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.name-container h2 {
+  font-size: 2rem;
+}
+
+.CompanyInfo-container .chart-container{
+  width: 50%;
+  flex-grow: 1;
+  max-height: 445.5px;
+}

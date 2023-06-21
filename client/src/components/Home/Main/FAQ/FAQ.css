@@ -1,0 +1,51 @@
+.FAQ-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 6rem 7.5rem 4rem 7.5rem;
+}
+
+.FAQ-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1000px;
+}
+
+.FAQ-section h2 {
+  font-size: 2.125rem;
+  color: #264192;
+  position: relative;
+}
+
+.FAQ-section h2 img {
+  position: absolute;
+  left: -5.25rem;
+  top: -5.25rem;
+}
+
+.QandA {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.FAQ-section h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.FAQ-section p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .FAQ-section {
+    padding: 3rem 5%;
+  }
+  .FAQ-section img {
+    visibility: hidden;
+  }
+}
