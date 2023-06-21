@@ -1,0 +1,305 @@
+[
+  {
+    "stockCode": "AAPL"
+  },
+  {
+    "stockCode": "ABBV"
+  },
+  {
+    "stockCode": "ABT"
+  },
+  {
+    "stockCode": "ACN"
+  },
+  {
+    "stockCode": "ADBE"
+  },
+  {
+    "stockCode": "AIG"
+  },
+  {
+    "stockCode": "AMD"
+  },
+  {
+    "stockCode": "AMGN"
+  },
+  {
+    "stockCode": "AMT"
+  },
+  {
+    "stockCode": "AMZN"
+  },
+  {
+    "stockCode": "AVGO"
+  },
+  {
+    "stockCode": "AXP"
+  },
+  {
+    "stockCode": "BA"
+  },
+  {
+    "stockCode": "BAC"
+  },
+  {
+    "stockCode": "BK"
+  },
+  {
+    "stockCode": "BKNG"
+  },
+  {
+    "stockCode": "BLK"
+  },
+  {
+    "stockCode": "BMY"
+  },
+  {
+    "stockCode": "BRK.B"
+  },
+  {
+    "stockCode": "C"
+  },
+  {
+    "stockCode": "CAT"
+  },
+  {
+    "stockCode": "CHTR"
+  },
+  {
+    "stockCode": "CL"
+  },
+  {
+    "stockCode": "CMCSA"
+  },
+  {
+    "stockCode": "COF"
+  },
+  {
+    "stockCode": "COP"
+  },
+  {
+    "stockCode": "COST"
+  },
+  {
+    "stockCode": "CRM"
+  },
+  {
+    "stockCode": "CSCO"
+  },
+  {
+    "stockCode": "CVS"
+  },
+  {
+    "stockCode": "CVX"
+  },
+  {
+    "stockCode": "DHR"
+  },
+  {
+    "stockCode": "DIS"
+  },
+  {
+    "stockCode": "DOW"
+  },
+  {
+    "stockCode": "DUK"
+  },
+  {
+    "stockCode": "EMR"
+  },
+  {
+    "stockCode": "EXC"
+  },
+  {
+    "stockCode": "F"
+  },
+  {
+    "stockCode": "FDX"
+  },
+  {
+    "stockCode": "GD"
+  },
+  {
+    "stockCode": "GE"
+  },
+  {
+    "stockCode": "GILD"
+  },
+  {
+    "stockCode": "GM"
+  },
+  {
+    "stockCode": "GOOG"
+  },
+  {
+    "stockCode": "GOOGL"
+  },
+  {
+    "stockCode": "GS"
+  },
+  {
+    "stockCode": "HD"
+  },
+  {
+    "stockCode": "HON"
+  },
+  {
+    "stockCode": "IBM"
+  },
+  {
+    "stockCode": "INTC"
+  },
+  {
+    "stockCode": "JNJ"
+  },
+  {
+    "stockCode": "JPM"
+  },
+  {
+    "stockCode": "KHC"
+  },
+  {
+    "stockCode": "KO"
+  },
+  {
+    "stockCode": "LIN"
+  },
+  {
+    "stockCode": "LLY"
+  },
+  {
+    "stockCode": "LMT"
+  },
+  {
+    "stockCode": "LOW"
+  },
+  {
+    "stockCode": "MA"
+  },
+  {
+    "stockCode": "MCD"
+  },
+  {
+    "stockCode": "MDLZ"
+  },
+  {
+    "stockCode": "MDT"
+  },
+  {
+    "stockCode": "MET"
+  },
+  {
+    "stockCode": "META"
+  },
+  {
+    "stockCode": "MMM"
+  },
+  {
+    "stockCode": "MO"
+  },
+  {
+    "stockCode": "MRK"
+  },
+  {
+    "stockCode": "MS"
+  },
+  {
+    "stockCode": "MSFT"
+  },
+  {
+    "stockCode": "NEE"
+  },
+  {
+    "stockCode": "NFLX"
+  },
+  {
+    "stockCode": "NKE"
+  },
+  {
+    "stockCode": "NVDA"
+  },
+  {
+    "stockCode": "ORCL"
+  },
+  {
+    "stockCode": "PEP"
+  },
+  {
+    "stockCode": "PFE"
+  },
+  {
+    "stockCode": "PG"
+  },
+  {
+    "stockCode": "PM"
+  },
+  {
+    "stockCode": "PYPL"
+  },
+  {
+    "stockCode": "QCOM"
+  },
+  {
+    "stockCode": "RTX"
+  },
+  {
+    "stockCode": "SBUX"
+  },
+  {
+    "stockCode": "SCHW"
+  },
+  {
+    "stockCode": "SO"
+  },
+  {
+    "stockCode": "SPG"
+  },
+  {
+    "stockCode": "T"
+  },
+  {
+    "stockCode": "TGT"
+  },
+  {
+    "stockCode": "TMO"
+  },
+  {
+    "stockCode": "TMUS"
+  },
+  {
+    "stockCode": "TSLA"
+  },
+  {
+    "stockCode": "TXN"
+  },
+  {
+    "stockCode": "UNH"
+  },
+  {
+    "stockCode": "UNP"
+  },
+  {
+    "stockCode": "UPS"
+  },
+  {
+    "stockCode": "USB"
+  },
+  {
+    "stockCode": "V"
+  },
+  {
+    "stockCode": "VZ"
+  },
+  {
+    "stockCode": "WBA"
+  },
+  {
+    "stockCode": "WFC"
+  },
+  {
+    "stockCode": "WMT"
+  },
+  {
+    "stockCode": "XOM"
+  }
+]
