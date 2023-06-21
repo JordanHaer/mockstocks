@@ -2,10 +2,29 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./CompanyInfo.css";
 import LineChart from "../LineChart/LineChart";
+import { useAuth0 } from "@auth0/auth0-react";
 
 export default function CompanyInfo({ companyInfoID }) {
+  const { user } = useAuth0();
   const [companyInfo, setCompanyInfo] = useState({});
   const [graphTime, setGraphTime] = useState("1m");
+  const [quantity, setQuantity] = useState(0);
+  const buyStock = async () => {
+    try {
+      const params = { email: user.email };
+      const existingAccountRes = await axios.get(`https://mockstocks.onrender.com/user`, { params: params });
+      const res = await axios.put(`https://mockstocks.onrender.com/user/buy/${existingAccountRes.data._id}`, {
+        stockCode: companyInfo.stockCode,
+        quantity: quantity,
+      });
+      console.log(res.data);
+      console.log('transaction complete')
+      // Handle successful purchase
+    } catch (error) {
+      console.log(error);
+      // Handle error
+    }
+  };
   const getCompanyInfo = async (ID) => {
     const res = await axios.get(`https://mockstocks.onrender.com/company/${ID}`);
     setCompanyInfo(res.data);
@@ -16,7 +35,7 @@ export default function CompanyInfo({ companyInfoID }) {
     const plusMinus = change > 0 ? "+" : change < 0 ? "-" : "";
     return [`${plusMinus} ${Math.abs(percentageChange).toFixed(2)}`, percentageChange];
   };
-  const handleGraphTime = (time)=> setGraphTime(time)
+  const handleGraphTime = (time) => setGraphTime(time);
   useEffect(() => {
     getCompanyInfo(companyInfoID);
   }, [companyInfoID]);
@@ -76,14 +95,21 @@ export default function CompanyInfo({ companyInfoID }) {
               {companyInfo.homepage_url}
             </a>
           </p>
-          <button onClick={()=>handleGraphTime('1m')}>1 Month</button>
-          <button onClick={()=>handleGraphTime('6m')}>6 Months</button>
-          <button onClick={()=>handleGraphTime('1y')}>1 Year</button>
-          <button onClick={()=>handleGraphTime('5y')}>5 Years</button>
-          <button onClick={()=>handleGraphTime('max')}>Max</button>
+          <button onClick={() => handleGraphTime("1m")}>1 Month</button>
+          <button onClick={() => handleGraphTime("6m")}>6 Months</button>
+          <button onClick={() => handleGraphTime("1y")}>1 Year</button>
+          <button onClick={() => handleGraphTime("5y")}>5 Years</button>
+          <button onClick={() => handleGraphTime("max")}>Max</button>
+          <form>
+            <label htmlFor="quantity">Quantity:</label>
+            <input type="number" id="quantity" value={quantity} onChange={(e) => setQuantity(e.target.value)} />
+            <button type="button" onClick={buyStock}>
+              Buy Stock
+            </button>
+          </form>
         </div>
         <div className="chart-container">
-          <LineChart graphTime={graphTime} companyInfo={companyInfo}/>
+          <LineChart graphTime={graphTime} companyInfo={companyInfo} />
         </div>
       </div>
     );

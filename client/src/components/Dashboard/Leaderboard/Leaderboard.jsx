@@ -1,35 +1,32 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import "./Leaderboard.css";
 
 export default function Leaderboard() {
   const [users, setUsers] = useState([]);
+
   const getAllUsers = async () => {
     const res = await axios.get(`https://mockstocks.onrender.com/users`);
-    console.log(res.data);
-    setUsers(res.data);
+    const sortedUsers = res.data.sort((a, b) => b.balance - a.balance);
+    setUsers(sortedUsers);
   };
+
   useEffect(() => {
     getAllUsers();
   }, []);
+
   if (!users) {
     return <div>Loading users...</div>;
   }
+
   return (
-    <div>
+    <div className="leaderboard-container">
       <ul>
         {users.map((user) => (
-          <li key={user._id}>
+          <li key={user._id} className="leaderboard-item">
             <div>
               <h2>{user.name}</h2>
-              <p>{user.balance}</p>
-              <div>
-                {user.portfolio.map((stock) => (
-                  <div key={stock.stockCode}>
-                    <p>{stock.stockCode}</p>
-                    <p>{stock.quantity}</p>
-                  </div>
-                ))}
-              </div>
+              <p>Balance: {user.balance}</p>
             </div>
           </li>
         ))}

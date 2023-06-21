@@ -8,7 +8,7 @@ export default function LineChart({ graphTime, companyInfo }) {
 
   useEffect(() => {
     const getFilterDate = () => {
-      const filterDate = new Date("2023-05-24");
+      const filterDate = new Date();
       switch (graphTime) {
         case "1m":
           filterDate.setMonth(filterDate.getMonth() - 1);
