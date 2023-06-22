@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import axios from "axios";
-import Header from "../../components/Home/Header";
-import Main from "../../components/Home/Main/Main";
-import Footer from "../../components/Home/Footer";
+import Header from "./Header";
+import Main from "./Main/Main";
+import Footer from "./Footer";
 
 export default function Home() {
   const startServer = async () => {
