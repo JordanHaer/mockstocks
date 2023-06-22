@@ -1,9 +1,8 @@
 import { useEffect } from "react";
 import axios from "axios";
-import Header from "../../components/Home/Header/Header";
+import Header from "../../components/Home/Header";
 import Main from "../../components/Home/Main/Main";
-import Footer from "../../components/Home/Footer/Footer";
-import "./Home.css";
+import Footer from "../../components/Home/Footer";
 
 export default function Home() {
   const startServer = async () => {
@@ -14,7 +13,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="Home-container">
+    <div className="flex-col font-sans">
       <Header />
       <Main />
       <Footer />

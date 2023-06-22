@@ -1,5 +1,3 @@
-import "./FAQ.css";
-
 export default function FAQ() {
   const questionsAnswers = [
     [
@@ -29,20 +27,19 @@ export default function FAQ() {
   ];
 
   return (
-    <div className="FAQ-section">
-      <div className="FAQ-content">
-        <h2>
-          <img
-            data-v-683546fc=""
-            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkxIiBoZWlnaHQ9IjE5MCIgdmlld0JveD0iMCAwIDE5MSAxOTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik05NS41NTE4IDBWMTg5LjU0IiBzdHJva2U9IiMzMzNBNTIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNMC43Njg1NTUgOTQuNzcwNUgxOTAuMzM1IiBzdHJva2U9IiMzMzNBNTIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8L3N2Zz4K"
-            alt="plus illustration"
-            width="125px"
-          />
-          FAQs
-        </h2>
+    <div className="container relative mx-auto flex max-w-5xl flex-col">
+      <img
+        className="absolute left-3 top-4 hidden md:block"
+        data-v-683546fc=""
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkxIiBoZWlnaHQ9IjE5MCIgdmlld0JveD0iMCAwIDE5MSAxOTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik05NS41NTE4IDBWMTg5LjU0IiBzdHJva2U9IiMzMzNBNTIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNMC43Njg1NTUgOTQuNzcwNUgxOTAuMzM1IiBzdHJva2U9IiMzMzNBNTIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8L3N2Zz4K"
+        alt="plus illustration"
+        width="125px"
+      />
+      <div className="flex flex-col gap-4 px-8  py-12 md:px-24 md:py-24">
+        <h2 className=" text-4xl  font-bold tracking-tight text-blue-800">FAQs</h2>
         {questionsAnswers.map(([question, answer], index) => (
-          <div key={index} className="QandA">
-            <h3>{question}</h3>
+          <div key={index} className="flex flex-col gap-2">
+            <h3 className="text-2xl font-bold">{question}</h3>
             <p>{answer}</p>
           </div>
         ))}
