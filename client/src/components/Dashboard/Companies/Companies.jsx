@@ -11,6 +11,7 @@ export default function Companies({ handleCompanyInfoID, handleTab }) {
   };
   useEffect(() => {
     getCompanies();
+    console.log('Companies useEffect')
   }, []);
   if (Object.keys(companies).length === 0) {
     return <div className="Companies-container"></div>;
