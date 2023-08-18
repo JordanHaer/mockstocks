@@ -13,6 +13,7 @@ export default function Leaderboard() {
 
   useEffect(() => {
     getAllUsers();
+    console.log('Leaderboard useEffect')
   }, []);
 
   if (!users) {
